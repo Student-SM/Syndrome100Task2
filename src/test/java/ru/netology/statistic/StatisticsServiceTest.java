@@ -1,9 +1,9 @@
 
 package ru.netology.statistic;
 
-        import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
-        import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class StatisticsServiceTest {
 
@@ -23,8 +23,8 @@ public class StatisticsServiceTest {
     void findMaxInTheMiddle() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 80, 6, 11, 11, 12};
-        long expected = 80;
+        long[] incomesInBillions = {12, 500, 8, 4, 5, 3, 8, 6, 11, 11, 12};
+        long expected = 500;
 
         long actual = service.findMax(incomesInBillions);
 
